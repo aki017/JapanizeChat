@@ -1,0 +1,8 @@
+name: JapanizeChat
+main: info.aki017.JapanizeChat.JapanizeChat
+version: 1.0
+commands:
+  japanize:
+    usage: /japanize (On|Off)
+    description: 自分のチャットを日本語化するか設定します
+    
