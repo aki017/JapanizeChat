@@ -4,5 +4,6 @@ version: 1.0
 commands:
   japanize:
     usage: /japanize (On|Off)
-    description: 自分のチャットを日本語化するか設定します
+    description: Set JapanizeChat On or Off
+    
     
