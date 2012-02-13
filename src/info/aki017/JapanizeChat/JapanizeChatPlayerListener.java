@@ -13,7 +13,7 @@ import biscotte.kana.Kana;
 
 public class JapanizeChatPlayerListener implements Listener {
 	public JapanizeChat plugin;
-    Pattern pattern = Pattern.compile("[‚Ÿ-ƒ–]|[ˆŸ-üK]|\u00a7");
+    Pattern pattern = Pattern.compile("[‚Ÿ-ƒ–]|[ˆŸ-üK]|\u00a7|u00a74u00a75u00a73u00a74v|");
 	public JapanizeChatPlayerListener(JapanizeChat plugin) {
 		this.plugin = plugin;
 		
@@ -24,7 +24,8 @@ public class JapanizeChatPlayerListener implements Listener {
 	public void onPlayerChat(PlayerChatEvent event) {
 		if (event.getMessage().startsWith("/")) return;
 			if (plugin.getConfigHandler().getJapanizeMode(event.getPlayer().getName()).equals("On")){
-		        Matcher matcher = pattern.matcher(event.getMessage());
+		        //plugin.log.info(event.getMessage());
+				Matcher matcher = pattern.matcher(event.getMessage());
 		        if (!matcher.find(0)){
 				
 		        Kana k = new Kana();
