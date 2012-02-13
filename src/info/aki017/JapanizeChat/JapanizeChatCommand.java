@@ -27,6 +27,10 @@ public class JapanizeChatCommand implements CommandExecutor {
 		if (args[0].equalsIgnoreCase("off")){
 			plugin.getConfigHandler().setJapanizeMode(sender.getName(),"Off");
 		}
+		if (args[0].equalsIgnoreCase("version")){
+			sender.sendMessage(ChatColor.GOLD + "JapanizeChat version " + plugin.getDescription().getVersion());
+			return true;
+		}
 		sender.sendMessage(ChatColor.GOLD + "JapanizeChat is "+ plugin.getConfigHandler().getJapanizeMode(sender.getName()));
 		return true;
 	}
