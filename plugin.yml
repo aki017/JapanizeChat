@@ -1,6 +1,6 @@
 name: JapanizeChat
 main: info.aki017.JapanizeChat.JapanizeChat
-version: 1.1
+version: 1.1.1
 commands:
   japanize:
     usage: /japanize (On|Off|Version)
